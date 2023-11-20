@@ -1,0 +1,33 @@
+Package: clare
+Type: Package
+Title: Longitudinal Analysis of Antibody Reactivity
+Version: 0.1.0
+Author: Erin Kelley
+Maintainer: Erin Kelley <ekelley903@gmail.com>
+Description: clare provides a framework for analysis of highly-multiplexed 
+    serological data from longitudinal studies. This includes quantification of 
+    dynamic epitope reactivity at the peptide-level. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: 
+    R (>= 2.10)
+Imports: 
+    clusterProfiler,
+    SummarizedExperiment,
+    dplyr,
+    methods,
+    S4Vectors,
+    lubridate
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Collate: 
+    'AllGenerics.R'
+    'Allclasses.R'
+    'PV2T_rowData.R'
+    'TBprog_colData.R'
+    'TBprog_zscores.R'
+    'transformZscores.R'
